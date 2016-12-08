@@ -18,18 +18,19 @@ console.log('#2: Hangman Lite');
  
 
 let word = 'gnomes';
-let letter = 'g';
+let letter = 'o';
 let o = 0;
 
 for (let i = 0; i < word.length; i++) {
     if (word[i] === letter) {
         o += 1;
-    } else if (word[i] !== letter) {
-        continue;
-    }
+    } 
 }
-console.log('The letter ' + letter + ' exists ' + o + ' time in my word.');
-
+if (o < 1) {
+    console.log('No that letter does not exist in the word.')
+} else {
+    console.log('Yeah, the letter ' + letter + ' exists ' + o + ' time in the word.');
+}
  
 
 
@@ -39,9 +40,16 @@ let startingPopulation = 1000;
 let birthRate = .05;
 let numberOfWeeks = 6;
 
+babyHares = startingPopulation * birthRate;
+allBabyHares = babyHares * numberOfWeeks;
+population = startingPopulation + allBabyHares;
+
+console.log('There will be ' + population + ' Cherokee Hares after ' + numberOfWeeks + ' weeks.');
+
 
 console.log('#4: Change Machine');
 
+let amount = 216;
 
 
 
