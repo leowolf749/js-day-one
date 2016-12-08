@@ -38,7 +38,7 @@ console.log('#3: Cherokee Hare');
 
 let startingPopulation = 1000;
 let birthRate = .05;
-let numberOfWeeks = 6;
+let numberOfWeeks = 12;
 
 babyHares = startingPopulation * birthRate;
 allBabyHares = babyHares * numberOfWeeks;
@@ -49,7 +49,16 @@ console.log('There will be ' + population + ' Cherokee Hares after ' + numberOfW
 
 console.log('#4: Change Machine');
 
+// 1. Create a variable called amount and give it a value.
+// 2. Make an array with different kinds of bills.
+// 3. Write a 'for' statement that subtracts the correct amount of the correct bill.
+
 let amount = 216;
+let cash = [1, 5, 10, 20];
+
+for (let i = 0; i > cash.length - 1; ) {
+    
+}
 
 
 
